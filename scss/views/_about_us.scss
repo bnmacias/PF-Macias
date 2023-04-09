@@ -1,0 +1,34 @@
+body{
+    display: block;
+    margin:0;
+    background-color: $color-dark;
+    font-family: 'noto sans', alegreya sans, karla;
+    $vista:mobile;
+    .main{
+        display: flexbox;
+        margin-top: 50px;
+        color: $color-light;
+        font-size: $text-medium;
+        &__section{
+            color:$color-light;
+            width: 100vw;
+            text-align: left;   
+            }
+            &__info{
+                display: flexbox;
+                margin-left: 50px;
+                margin-right:50px;
+                padding:15px 15px;
+                margin-bottom: 50px;
+                color:$color-light;
+                background-color: #2a2c2e6e;
+                border-radius: 10px;
+                }
+                & h2{
+                    text-align: center;
+                    border-bottom: solid 1px dimgrey;
+                    padding-top: 5px;
+                    padding-bottom: 10px;
+                    }
+            }
+        }

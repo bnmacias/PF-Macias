@@ -1,0 +1,14 @@
+@if $vista == mobile{
+    @media only screen and (max-width:767px){
+        .main__section{
+            display:inline;
+        }
+    }
+    @if else{
+        @media only screen and (min-width:768px){
+			.main__section{
+            display:flex;
+            }
+        }
+    }
+}

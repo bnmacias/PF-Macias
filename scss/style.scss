@@ -1,0 +1,167 @@
+// globals
+@import "./globals/variables";
+@import "./globals/reset";
+@import "./globals/tipografy";
+@import "./globals/mediaquery";
+
+
+// views
+
+@import "./views/about_us";
+@import "./views/services";
+@import "./views/contact_us";
+@import "./views/login";
+@import "./views/sign_in";
+@import "./views/patch_loading_page";
+@import "./views/tow_loading_page.scss";
+@import "./views/confirmation_page";
+
+body{
+    $vista:mobile;
+    & .menu{
+        list-style: none;
+        &__item{
+            padding:10px;
+            display: inline-block;
+            border-radius: 7px;
+            &:hover{
+                border: 1px solid;
+                border-color: $color-secondary;
+                background-color: $color-secondary;
+                transition: 0.2s;
+                cursor: pointer;
+            }
+        }
+        &__link{
+                text-decoration: none;
+                font-size: 16px;
+                color:$color-dark;
+                &:hover{
+                    color: $color-light;
+                    transition: 0.2s;
+                }
+            }
+        &__img{
+            height: 30px;
+        }
+    }
+
+    & .main{
+        display:block;
+        margin-top: 50px;
+        color: $color-light;
+        font-size: $text-medium;
+        text-align: center;
+        &__title{
+            margin-bottom: 40px;
+        }
+        &__button{
+            display:flex; 
+            justify-content:center; 
+            flex-wrap:wrap;
+            padding-top: 100px;
+            &a{
+                font-size: $text-small;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: larger;
+                border-style: solid 1px $color-warning;
+            }
+            &__primary{
+                    margin:10px;
+                    width:100%;
+                    height: 40px;
+                    max-width:350px; 
+                    border-radius: 7px;
+                    background-color: $color-dark;
+                    border-style: solid;
+                    color: $color-warning;
+                    &:hover{
+                        background-color: $color-warning;
+                        color: $color-dark;
+                        cursor: pointer;
+                        transition: 0.2s;
+                    }
+                }
+                &__secondary{
+                    margin:10px;
+                    width:100%;
+                    height: 40px;
+                    max-width:350px; 
+                    border-style: solid 1px;
+                    border-radius: 7px;
+                    background-color: $color-dark;
+                    border-style: solid;
+                    border-color: $color-light;
+                    color: $color-light;
+                    &:hover{
+                        background-color: $color-light;
+                        color: $color-dark;
+                        cursor: pointer;
+                        transition: 0.2s;
+                    }
+                }
+            }
+        &__home{
+            display:flex; 
+            justify-content:center; 
+            flex-wrap:wrap;
+            padding-top: 100px;
+            margin-bottom: 20px;
+            &__back{
+                text-decoration: none;
+                width:100%;
+                height: 40px;
+                max-width:350px;
+                border-style: solid 1px;
+                border-radius: 7px;
+                background-color: $color-dark;
+                border-style: solid;
+                border-color: $color-secondary;
+                color: $color-light;
+                &:hover{
+                    background-color: $color-secondary;
+                        color: $color-light;
+                        cursor: pointer;
+                        transition: 0.2s;
+                }
+            }
+            } 
+    }
+    & .footer{
+        height: 120px;
+        background-color: $color-light;
+        & div {
+            padding-top: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &.footer__social{
+            display: inline;
+            flex-wrap: wrap;
+            &.menu{
+                list-style: none;
+                &__item:hover{
+                    color:transparent;
+                    background-color:transparent;
+                    transition: 0.2s;
+                    cursor: pointer;
+                    }
+                }
+            }
+        &.footer__download{
+            display: inline;
+            flex-wrap: wrap;
+        }
+        & div p{
+            color:$color-dark;
+            font-size: $text-xsmall;
+            }
+        }
+}   
+
+.div__redes{
+    display:inline-block;
+    justify-content: space-between;
+}
