@@ -8,13 +8,10 @@
 // views
 
 @import "./views/about_us";
-@import "./views/services";
-@import "./views/contact_us";
 @import "./views/login";
 @import "./views/sign_in";
 @import "./views/patch_loading_page";
 @import "./views/tow_loading_page.scss";
-@import "./views/confirmation_page";
 
 body{
     $vista:mobile;
